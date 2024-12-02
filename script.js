@@ -15,7 +15,7 @@ const navLinks = [
   { href: "#About-section", text: "About" },
   { href: "#SkillSection", text: "Skills" },
   { href: "#ProjectSection", text: "Projects" },
-  { href: "#", text: "Contact" }
+  { href: "#contactSection", text: "Contact" }
 ];
 
 navLinks.forEach(linkData => {
@@ -137,8 +137,6 @@ a.className = "My-skill";
 a.innerHTML = ` <h1>My <span>Skills</span></h1>`;
 SkillSection.appendChild(a);
 
-
-
 const b = document.createElement("div");
 b.className = "Descript";
 b.innerHTML = ` <h2>Languages I've been familiar with since I've entered college.</h2>`;
@@ -189,7 +187,7 @@ button.className = 'skills-button';
 button.textContent = 'Continue';
 
 button.addEventListener('click', function() {
-     const btn = document.getElementById("id name nung gusto mong puntahan");
+     const btn = document.getElementById("ProjectSection");
      if (btn) {
       btn.scrollIntoView({ behavior: "smooth" });
      }
@@ -230,26 +228,31 @@ projectsSection.appendChild(projectContentDiv);
 
 document.body.appendChild(projectsSection);
 
-// const button = document.createElement('button');
-// button.className = 'projects-button';
-// button.textContent = 'View All Skills';
+const contactButton = document.createElement('button');
+contactButton.className = 'contact-button';
+contactButton.textContent = 'Contact Me';
 
-// button.addEventListener('click', function() {
-//      const btn = document.getElementById("id name nung gusto mong puntahan");
-//      if (btn) {
-//       btn.scrollIntoView({ behavior: "smooth" });
-//      }
-// });
+contactButton.addEventListener('click', function() {
+    const contactSection = document.getElementById("contactSection");
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+});
 
+projectsSection.appendChild(contactButton);
 
-// document.body.appendChild(button);
-
+document.body.appendChild(projectsSection);
 
 //End of project section
+
+
+
+
 
 //Start of contact section
 
 const contactSection = document.createElement('section');
+contactSection.id = "contactSection";
 contactSection.className = 'Contact';
 
 const contactInfoDiv = document.createElement('div');
@@ -296,10 +299,9 @@ messageButton.className = 'button';
 messageButton.textContent = 'Message';
 contactInputDiv.appendChild(messageButton);
 
-// Add the Contact-input div to the main section
+
 contactSection.appendChild(contactInputDiv);
 
-// Append the entire Contact section to the body (or another container)
 document.body.appendChild(contactSection);
 
 //End of contact section
@@ -309,10 +311,9 @@ const footer = document.createElement('footer');
 footer.className = 'social-icons';
 
 const socialLinks = [
-  { href: '#', iconClass: 'fa-brands fa-linkedin' },
-  { href: '#', iconClass: 'fa-brands fa-github' },
-  { href: '#', iconClass: 'fa-brands fa-x-twitter' },
-  { href: '#', iconClass: 'fa-brands fa-instagram' },
+  { href: 'https://github.com/PakoMan09', iconClass: 'fa-brands fa-github' },
+  { href: 'https://web.facebook.com/paku.man.04/', iconClass: 'fa-brands fa-facebook' },
+  { href: 'https://www.instagram.com/super_pako04/', iconClass: 'fa-brands fa-instagram' },
 ];
 
 socialLinks.forEach(linkData => {

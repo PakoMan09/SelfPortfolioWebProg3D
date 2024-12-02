@@ -159,11 +159,22 @@ span{
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
     transition: 0.2s linear;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-size: 100% 14 0%;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: linear-gradient(to bottom, #0f0e17, #0f0e17, #0f0e17ee,#0f0e1700);
 }
 .home-img img:hover{
     font-size: 1.8rem;
     font-weight: 500;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+
+}
+
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -308,7 +319,7 @@ span {
 
 }
 
-.btn2 {
+.btn2, .project-button {
     display: inline-block;
     padding: 1rem 2.8rem;
     background-color: #b74b4b; 
@@ -323,7 +334,7 @@ span {
     margin-top: 1.5rem;
     width: fit-content;
 }
-.btn2:hover {
+.btn2:hover, .project-button:hover {
     transform: scale3d(1.03);
     background-color: white;
     color: #b74b4b; 
@@ -385,6 +396,7 @@ span {
     justify-content: center;
     padding: 10px 20px 0px 20px;
     font-size: 2rem;
+    margin-top: 30px;
 }
 
 .skills-button {
@@ -393,7 +405,6 @@ span {
     top: 30px;
 }
 
-
 .Descript {
     display: flex;
     flex-direction: column;
@@ -401,6 +412,7 @@ span {
     justify-content: center;
     padding: 0px 20px 10px 20px;
     font-size: 1.25rem;
+    margin: 10px 0;
 }
 
 .Projects {
@@ -416,6 +428,7 @@ span {
     text-shadow: 1px 1px 5px #3b3b3b;
     color: #fff; 
     padding-bottom: 30px;
+    margin-top: 40px;
 }
 
 .Project-content {
@@ -449,17 +462,74 @@ span {
 
 .Contact {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 100%;
     
 }
 
+.Contact-info {
+    width: 40%;     
+    font-size: 3rem;
+}
+
 .Contact-input {
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
-    
+    gap: 15px;
 
+}
+
+.Contact-input input,
+.Contact-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #b74b4b;
+    font-size: 3rem;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: #b74b4b;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover, .button:hover {
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: white; 
+    box-shadow: 0 0 10px #b74b4b;
+}
+
+.project-button {
+    position: relative;
+    left: 450px;
+    margin-top: 30px;
+}
+
+.contact-button {
+    position: relative;
+    left: 450px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    background-color: #b74b4b;
+    color: white;
+    border-radius: 25px;
+    border: solid 2px white;
+
+}
+
+.contact-button:hover {
+    transform: scale3d(1.03);
+    background-color: white;
+    color: #b74b4b; 
+    box-shadow: 0 0 10px white;
+    border: solid 2px #b74b4b;
 }
