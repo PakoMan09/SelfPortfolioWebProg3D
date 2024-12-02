@@ -11,10 +11,10 @@ header.appendChild(logoLink);
 const nav = document.createElement('nav');
 
 const navLinks = [
-  { href: "#", text: "Home", class: "active" },
+  { href: "#", text: "Home" },
   { href: "#About-section", text: "About" },
-  { href: "#Skills-section", text: "Skills" },
-  { href: "#", text: "Projects" },
+  { href: "#SkillSection", text: "Skills" },
+  { href: "#ProjectSection", text: "Projects" },
   { href: "#", text: "Contact" }
 ];
 
